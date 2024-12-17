@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>ServletJdbc</display-name>
+  <welcome-file-list>
+    <welcome-file>singUp.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  <servlet-name>SignUp</servlet-name>
+  <servlet-class>com.patel.basic.SignUp</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SignUp</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet>
+  <servlet-name>ShowData</servlet-name>
+  <servlet-class>com.patel.basic.ViewRecord</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowData</servlet-name>
+    <url-pattern>/AllRecord</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>Delete</servlet-name>
+  <servlet-class>com.patel.basic.DeleteRecord</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Delete</servlet-name>
+    <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  <servlet-name>Find1</servlet-name>
+  <servlet-class>com.patel.basic.FindRecord</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Find1</servlet-name>
+    <url-pattern>/find</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>Find11</servlet-name>
+  <servlet-class>com.patel.basic.UpdateSignup</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Find11</servlet-name>
+    <url-pattern>/updatedata</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
