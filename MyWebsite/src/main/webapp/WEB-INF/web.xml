@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <servlet>
+  <servlet-name>Servlet1</servlet-name>
+  <servlet-class>com.patel.basic.MyWebSite</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+        <servlet-name>Servlet1</servlet-name>
+        <url-pattern>/first</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>ServletPage2</servlet-name>
+  <servlet-class>com.patel.basic.ServletPage2</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+        <servlet-name>ServletPage2</servlet-name>
+        <url-pattern>/second</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>ServletPage3</servlet-name>
+  <servlet-class>com.patel.basic.ServletPage3</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+        <servlet-name>ServletPage3</servlet-name>
+        <url-pattern>/third</url-pattern>
+  </servlet-mapping>
+  
+  
+</web-app>
